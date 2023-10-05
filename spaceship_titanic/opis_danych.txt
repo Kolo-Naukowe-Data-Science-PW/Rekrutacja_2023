@@ -1,0 +1,19 @@
+﻿PassengerId - unikalny identyfikator każdego pasażera. Każdy identyfikator ma postać gggg_pp, gdzie gggg oznacza grupę, z którą podróżuje pasażer, a pp to jego numer w grupie. Osoby w grupie są często członkami rodziny, ale nie zawsze.
+
+HomePlanet - planeta, z której pasażer odleciał, zazwyczaj planeta stałego zamieszkania.
+
+ CryoSleep - wskazuje, czy pasażer zdecydował się zostać wprowadzony w stan hibernacji na czas podróży. Pasażerowie w stanie “kriosnu” są zamknięci w swoich kabinach.
+
+Cabin - numer kabiny, w której przebywa pasażer. Przyjmuje postać deck/num/side, gdzie side może oznaczać P (lewą burtę) lub S (prawą burtę).
+
+Destination - planeta, na którą podróżuje pasażer.
+
+Age - wiek pasażera.
+
+VIP - informacja, czy pasażer zapłacił za specjalną usługę VIP podczas rejsu.
+
+RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - kwota, jaką pasażer zapłacił za korzystanie z wielu luksusowych udogodnień na statku kosmicznym Titanic.
+
+Name - imię i nazwisko pasażera.
+
+Transported - informacja, czy pasażer został przetransportowany do innego wymiaru. To informacja, którą chcemy przewidzieć tworząć model machine learningowy (patrz opis zadania).
