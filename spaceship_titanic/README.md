@@ -7,3 +7,9 @@
 Ale to nie koniec! Jeśli zaciekawisz się jeszcze bardziej i masz ochotę szerzej wykorzystać swoją analizę, mile widziane będzie stworzenie modelu machine learningowego przewidującego, czy dany pasażer został przetransportowany do innego wymiaru. 🤖🌌
 
 ####  To doskonała okazja, aby wykorzystać swoje umiejętności analityczne, kreatywność i zdolności prezentacyjne. Zapnijcie pasy i wyruszcie z nami w podróż w głąb kosmicznej otchłani! 🚀🌌
+
+## Jak udostępnić rozwiązanie?
+
+1. Zrób forka tego repozytorium
+2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odnowiedniego folderu `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
+3. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
