@@ -16,7 +16,7 @@ Możecie też pisać ma **[facebook'u](https://www.facebook.com/kolonaukowedatas
 ## Jak udostępnić rozwiązanie?
 
 1. Zrób forka tego repozytorium
-2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odnowiedniego folderu
+2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu
    - `connect4/rozwiazania/<imie>_<nazwisko>/`
    - `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
 4. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
