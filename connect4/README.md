@@ -44,5 +44,5 @@ gdzie R oznacza czerwony dysk, Y dysk żółty.
 ## Jak udostępnić rozwiązanie?
 
 1. Zrób forka tego repozytorium
-2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odnowiedniego folderu `connect4/rozwiazania/<imie>_<nazwisko>/`
+2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu `connect4/rozwiazania/<imie>_<nazwisko>/`
 3. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
