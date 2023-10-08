@@ -13,5 +13,5 @@ Ale to nie koniec! Jeśli zaciekawisz się jeszcze bardziej i masz ochotę szerz
 ## Jak udostępnić rozwiązanie?
 
 1. Zrób forka tego repozytorium
-2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odnowiedniego folderu `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
+2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
 3. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
