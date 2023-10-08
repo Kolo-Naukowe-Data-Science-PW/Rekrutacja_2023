@@ -11,7 +11,7 @@ Termin: **00:00 26 października 2023**
 
 Zapraszamy na naszego **[Discord'a](https://discord.gg/r7AJ9r7X)**, tam znajdziecie aktualne ogłoszenia i będziecie mogli zadawać pytania. 
 
-Możecie też pisać ma [facebook'u](https://www.facebook.com/kolonaukowedatascience) albo łapać nas na wydziale MiNI 😀
+Możecie też pisać ma **[facebook'u](https://www.facebook.com/kolonaukowedatascience)** albo łapać nas na wydziale MiNI 😀
 
 ## Jak udostępnić rozwiązanie?
 
