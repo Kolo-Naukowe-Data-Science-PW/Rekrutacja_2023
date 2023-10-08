@@ -1,6 +1,7 @@
 ## 🚀🌌Zainspiruj nas swoimi umiejętnościami analizy danych!🚀🌌
 
 <img align="right" width="350px" src="https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023/assets/30211831/ff323ce0-005a-400c-ae5e-c794e6d00081" />
+
 ### Czy marzyłeś kiedyś o podróży na pokładzie statku kosmicznego? 
 
 🚢Nieważne, czy jesteś pasjonatem nauk przyrodniczych czy wielbicielem filmów sci-fi - mamy dla Ciebie wyjątkowe zadanie rekrutacyjne do naszego koła! 📊📈 Twoim zadaniem jest eksploracja, analiza i wyciągnięcie cennych wniosków ze zbioru danych "Spaceship Titanic".  🛸🌠 Musisz odkryć jak najwięcej ciekawych statystyk oraz relacji między cechami pasażerów. Wszystko należy również zwizualizować na wykresach, aby jeszcze lepiej oddać ich charakter, a następnie przekonująco zaprezentować i uzasadnić swoje wnioski. 💡📊
