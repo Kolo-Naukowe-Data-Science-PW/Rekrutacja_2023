@@ -19,6 +19,6 @@ Możecie też pisać ma **[facebook'u](https://www.facebook.com/kolonaukowedatas
 2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu
    - `connect4/rozwiazania/<imie>_<nazwisko>/`
    - `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
-4. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
+4. Stwórz nowego Pull Requesta z twojego forka do tego repozytorium
 
 
