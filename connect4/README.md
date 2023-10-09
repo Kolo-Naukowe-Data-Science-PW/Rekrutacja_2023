@@ -45,4 +45,4 @@ gdzie R oznacza czerwony dysk, Y dysk żółty.
 
 1. Zrób forka tego repozytorium
 2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu `connect4/rozwiazania/<imie>_<nazwisko>/`
-3. Stwórz nowego Pull Requsta z twojego forka do tego repozytorium
+3. Stwórz nowego Pull Requesta z twojego forka do tego repozytorium
