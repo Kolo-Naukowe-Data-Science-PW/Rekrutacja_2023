@@ -40,7 +40,7 @@ You can also write on **[facebook](https://www.facebook.com/kolonaukowedatascien
 
 1. Make a fork of this repository
 2. Add all files included in the solution to the appropriate folder
-   - `connect4/rozwiazania/<imie>_<nazwisko>/`
-   - `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
+   - `connect4/rozwiazania/<name>_<surname>/`
+   - `spaceship_titanic/rozwiazania/<name>_<surname>/`
 4. Create a new Pull Request from your fork to this repository
 
