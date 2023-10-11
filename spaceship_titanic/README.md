@@ -29,5 +29,5 @@ This is a great opportunity to use your analytical skills, creativity and presen
 How to share the solution?
 
 1. Make a fork of this repository
-2. Add all files included in the solution to the appropriate folder: `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
+2. Add all files included in the solution to the appropriate folder: `spaceship_titanic/rozwiazania/<name>_<surname>/`
 3. Create a new Pull Request from your fork to this repository
