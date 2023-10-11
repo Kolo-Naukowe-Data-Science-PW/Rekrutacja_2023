@@ -1,4 +1,4 @@
-## 🚀🌌Zainspiruj nas swoimi umiejętnościami analizy danych!🚀🌌
+## 🚀🌌 Zainspiruj nas swoimi umiejętnościami analizy danych! 🚀🌌
 
 <img align="right" width="350px" src="https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023/assets/30211831/ff323ce0-005a-400c-ae5e-c794e6d00081" />
 
@@ -15,3 +15,19 @@ Ale to nie koniec! Jeśli zaciekawisz się jeszcze bardziej i masz ochotę szerz
 1. Zrób forka tego repozytorium
 2. Dodaj wszystkie pliki wchodzące w skład rozwiązania do odpowiedniego folderu `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
 3. Stwórz nowego Pull Requesta z twojego forka do tego repozytorium
+
+---
+
+## 🚀🌌 Inspire us with your data analysis skills! 🚀🌌
+### Have you ever dreamed of traveling aboard a spaceship?
+
+🚢Whether you are passionate about life sciences or a fan of sci-fi movies, we have a unique recruitment task for you to join our club! 📊📈 Your task is to explore, analyze and draw valuable conclusions from the "Spaceship Titanic" dataset. 🛸🌠 You need to discover as many interesting statistics and relationships between passenger characteristics as possible. You also need to visualize everything in graphs to further illustrate their nature, and then convincingly present and justify your conclusions. 💡📊
+
+But it doesn't stop there! If you get even more curious and feel like using your analysis more broadly, a machine learning model predicting whether or not a particular passenger has been transported to another dimension would be welcome. 🤖🌌
+
+This is a great opportunity to use your analytical skills, creativity and presentation skills. Fasten your seatbelts and embark with us on a journey into the depths of the cosmic abyss! 🚀🌌
+How to share the solution?
+
+1. Make a fork of this repository
+2. Add all files included in the solution to the appropriate folder: `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
+3. Create a new Pull Request from your fork to this repository
