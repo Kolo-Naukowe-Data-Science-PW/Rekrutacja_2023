@@ -31,7 +31,8 @@ Hey! This year we have 2 tasks for you to choose from, choose one according to y
 - [Connect 4 game](https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023/tree/main/connect4#connect-4-)
 
 Deadline: 00:00 on October 26, 2023
-Contact
+
+## Contact
 
 Please visit our  **[Discord](https://discord.gg/r7AJ9r7X)**, there you will find current announcements and you can ask questions.
 
