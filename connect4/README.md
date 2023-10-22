@@ -2,7 +2,7 @@
 
 <div>
 
- <img width="300px" align="right" src="https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023/assets/30211831/3a9162a9-d84e-474f-b633-c0d20d3f8a0e" /> 
+ <img width="300px" align="right" src="img/connect4.jpg" /> 
 
 Proponujemy zabawę z grą Connect 4. Waszym zadaniem jest stworzenie bota do gry
  
