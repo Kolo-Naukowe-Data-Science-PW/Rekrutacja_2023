@@ -1,6 +1,6 @@
 ## 🚀🌌 Zainspiruj nas swoimi umiejętnościami analizy danych! 🚀🌌
 
-<img align="right" width="350px" src="https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023/assets/30211831/ff323ce0-005a-400c-ae5e-c794e6d00081" />
+<img align="right" width="350px" src="img/titanic.jpg" />
 
 ### Czy marzyłeś kiedyś o podróży na pokładzie statku kosmicznego? 
 
