@@ -271,9 +271,9 @@ def run_game(player1, player2, board_width, board_height, bot_vs_bot=False):
             bot = not bot
 
 if __name__ == "__main__":
-    board_width = 100
-    board_height = 100
-    length_needed = 15
+    board_width = 10
+    board_height = 10
+    length_needed = 4
     player1 = MyPlayer(board_width=board_width, board_height=board_height, length_needed=length_needed, train=False)
     player2 = MyPlayer(board_width=board_width, board_height=board_height, length_needed=length_needed, train=False)
 

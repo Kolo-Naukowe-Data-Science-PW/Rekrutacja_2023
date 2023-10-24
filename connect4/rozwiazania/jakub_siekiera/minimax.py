@@ -133,11 +133,102 @@ class MyPlayer:
                 pass
 
 
+    # def evaluate_position(self, board: np.ndarray, player_moving_id: int) -> float:
+    #     """
+    #     Evaluate the position of the board. The result should be between -1 and 1.
+    #     Negative values mean the player 1 is winning, positive values mean player 2 is winning.
+    #     """
+    #     if player_moving_id == self.player_id:
+    #         opponent_id = self.opponent_id
+    #     else:
+    #         opponent_id = self.player_id
+
+    #     # Check if the player has won
+    #     if self.is_winner(board, player_moving_id):
+    #         return 1.0
+    #     # Check if the opponent has won
+    #     elif self.is_winner(board, opponent_id):
+    #         return -1.0
+    #     # If it's a draw, return 0
+    #     elif np.all(board != 0):
+    #         return 0.0
+    #     else:
+    #         # Calculate a simple heuristic based on the number of pieces in rows, columns, and diagonals
+    #         player_score = self.calculate_score(board, player_moving_id)
+    #         opponent_score = self.calculate_score(board, opponent_id)
+    #         return (player_score - opponent_score) / self.length_needed
+    def calculate_connected(self, board: np.ndarray, player_id: int) -> int:
+        connected_count = 0
+
+        for row in range(self.board_height):
+            for col in range(self.board_width):
+                if board[row][col] == player_id:
+                    # Check horizontal, vertical, and diagonal (bottom-left to top-right) directions
+                    if self.check_connected(board, player_id, row, col, 1, 0):
+                        connected_count += 1
+                    if self.check_connected(board, player_id, row, col, 0, 1):
+                        connected_count += 1
+                    if self.check_connected(board, player_id, row, col, 1, 1):
+                        connected_count += 1
+                    if self.check_connected(board, player_id, row, col, 1, -1):
+                        connected_count += 1
+
+        return connected_count
+
+    def calculate_threats(self, board: np.ndarray, player_id: int) -> int:
+        threats = 0
+
+        for row in range(self.board_height):
+            for col in range(self.board_width):
+                if board[row][col] == 0:
+                    # If the cell is empty, check if placing a disc here creates a threat
+                    if self.check_threat(board, player_id, row, col):
+                        threats += 1
+
+        return threats
+
+    def calculate_winning_opportunities(self, board: np.ndarray, player_id: int) -> int:
+        opportunities = 0
+
+        for col in range(self.board_width):
+            # Check if placing a disc in this column creates a winning opportunity
+            if self.is_winning_opportunity(board, player_id, col):
+                opportunities += 1
+
+        return opportunities
+
+    def check_connected(self, board, player, row, col, dr, dc):
+        # Check if there are 4 consecutive pieces of the same player in a given direction (dr, dc)
+        for i in range(self.length_needed):
+            r = row + i * dr
+            c = col + i * dc
+            if r < 0 or r >= self.board_height or c < 0 or c >= self.board_width or board[r][c] != player:
+                return False
+        return True
+
+    def check_threat(self, board: np.ndarray, player_id: int, row: int, col: int) -> bool:
+        # Check if placing a disc in this cell creates a threat (i.e., the opponent would have a chance to win on the next move)
+        # We simulate the placement and check if the opponent can win
+        board_copy = np.copy(board)
+        board_copy[row][col] = player_id
+        return self.is_winner(board_copy, self.opponent_id)
+
+    def is_winning_opportunity(self, board: np.ndarray, player_id: int, col: int) -> bool:
+        # Check if placing a disc in this column creates a winning opportunity for the player
+        if 0 in board[:, col]:
+            row = np.where(board[:, col] == 0)[0][-1]  # Find the lowest empty row in the column
+            board_copy = np.copy(board)
+            board_copy[row][col] = player_id
+            return self.is_winner(board_copy, player_id)
+        return False
+
+
     def evaluate_position(self, board: np.ndarray, player_moving_id: int) -> float:
         """
         Evaluate the position of the board. The result should be between -1 and 1.
         Negative values mean the player 1 is winning, positive values mean player 2 is winning.
         """
+
         if player_moving_id == self.player_id:
             opponent_id = self.opponent_id
         else:
@@ -146,40 +237,46 @@ class MyPlayer:
         # Check if the player has won
         if self.is_winner(board, player_moving_id):
             return 1.0
+
         # Check if the opponent has won
-        elif self.is_winner(board, opponent_id):
+        if self.is_winner(board, opponent_id):
             return -1.0
-        # If it's a draw, return 0
-        elif np.all(board != 0):
-            return 0.0
-        else:
-            # Calculate a simple heuristic based on the number of pieces in rows, columns, and diagonals
-            player_score = self.calculate_score(board, player_moving_id)
-            opponent_score = self.calculate_score(board, opponent_id)
-            return (player_score - opponent_score) / self.length_needed
+
+        # Calculate the player's advantage based on the number of connected discs
+        player_connected = self.calculate_connected(board, player_moving_id)
+        opponent_connected = self.calculate_connected(board, opponent_id)
+
+        # Calculate the potential threats for the player and opponent
+        player_threats = self.calculate_threats(board, player_moving_id)
+        opponent_threats = self.calculate_threats(board, opponent_id)
+
+        # Calculate the number of opportunities for the player and opponent to win
+        player_winning_opportunities = self.calculate_winning_opportunities(board, player_moving_id)
+        opponent_winning_opportunities = self.calculate_winning_opportunities(board, opponent_id)
+
+        # Calculate the advantage based on the above factors
+        advantage = (
+            (player_connected - opponent_connected) +
+            (player_threats - opponent_threats) +
+            (player_winning_opportunities - opponent_winning_opportunities)
+        )
+
+        return advantage / self.length_needed
+
 
     def is_winner(self, board, player):
         # Check if the player has won in any direction (horizontal, vertical, diagonal)
         for row in range(self.board_height):
             for col in range(self.board_width):
-                if self.check_connect_four(board, player, row, col, 1, 0):
+                if self.check_connected(board, player, row, col, 1, 0):
                     return True  # Horizontal
-                if self.check_connect_four(board, player, row, col, 0, 1):
+                if self.check_connected(board, player, row, col, 0, 1):
                     return True  # Vertical
-                if self.check_connect_four(board, player, row, col, 1, 1):
+                if self.check_connected(board, player, row, col, 1, 1):
                     return True  # Diagonal (bottom-left to top-right)
-                if self.check_connect_four(board, player, row, col, 1, -1):
+                if self.check_connected(board, player, row, col, 1, -1):
                     return True  # Diagonal (top-left to bottom-right)
         return False
-
-    def check_connect_four(self, board, player, row, col, dr, dc):
-        # Check if there are 4 consecutive pieces of the same player in a given direction (dr, dc)
-        for i in range(self.length_needed):
-            r = row + i * dr
-            c = col + i * dc
-            if r < 0 or r >= self.board_height or c < 0 or c >= self.board_width or board[r][c] != player:
-                return False
-        return True
 
     def calculate_score(self, board, player):
         # Calculate a simple heuristic score based on the number of pieces in rows, columns, and diagonals
@@ -252,9 +349,9 @@ def run_game(player1, player2, board_width, board_height, bot_vs_bot=False):
             bot = not bot
 
 if __name__ == "__main__":
-    board_width = 20
-    board_height = 20
-    length_needed = 15
+    board_width = 5
+    board_height = 5
+    length_needed = 4
     player1 = MyPlayer(board_width=board_width, board_height=board_height, length_needed=length_needed, train=False)
     player2 = MyPlayer(board_width=board_width, board_height=board_height, length_needed=length_needed, train=False)
 
