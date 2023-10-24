@@ -1,0 +1,18 @@
+Parę słów ode mnie
+1.  Nie byłem pewien jak rozumieć tablicę tzn. czy pierwsza tablica w NP jest dolnym, czy górnym rzędem.
+    Przyjąłem następujący format:
+    np.array([[0, 0, 0, 0, 0, 0, 0, 0],
+              [0, 0, 0, 0, 0, 0, 0, 0],
+              [0, 0, 0, 1, 2, 0, 0, 0],
+              [0, 0, 2, 2, 1, 1, 0, 0],
+              [0, 1, 1, 2, 1, 2, 2, 0],
+              [1, 2, 1, 2, 1, 2, 1, 2]])
+2.  Przyznaję żę mój MiniMax nie jest może najbardziej utalentowany jednak pierwszy raz mierzyłem się z takim wyzwaniem.
+    Posiłkowałem się wsparciem z tego artykułu:
+    https://towardsdatascience.com/creating-the-perfect-connect-four-ai-bot-c165115557b0
+    Dostosowanie przedstawionego rozwiązania tak, aby działało na dowolnej wielkości planszy z dowolnym n i jednocześnie
+    dalej było możliwie szybkie, wymagało trochę główkowania. Niemniej osobiście jestem zadowolony z mojej implementacji.
+3.  Za wykonanie projektu zabrałem się relatywnie późno (22.10), dlatego nie starczyło mi czasu na zaimplementowanie
+    alpha-beta pruning'gu czy zmiany algorytmu na coś, co mogłoby być nieco bardziej wydajne.
+
+PS. Mimo kilku ataków złości pod tytułem "Dlaczego to nie działa !!!" to bawiłem się świetnie.
