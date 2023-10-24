@@ -48,7 +48,7 @@ class Roy(Player, ABC):
         self.board_width = board_width
         self.id = 0
         self.programing = connect_programing(length_needed)
-        self.search_depth = 2
+        self.search_depth = 6
         self.mask = 0
         self.position = 0
 
@@ -168,13 +168,4 @@ class Roy(Player, ABC):
 
 
 if __name__ == '__main__':
-    player1 = Roy(8, 6, 4, False)
-    player1.start_game(1)
-    z = np.array([[0, 0, 0, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 0, 0],
-                  [1, 2, 1, 2, 1, 2, 1, 2]])
-    player1.search_depth = 6
-    print(player1.get_move(z))
+    pass
