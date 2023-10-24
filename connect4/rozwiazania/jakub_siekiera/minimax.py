@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 class MyPlayer:
     """
@@ -36,7 +37,7 @@ class MyPlayer:
         assert(len(board[0] == self.board_width))
         assert(len(board == self.board_height))
         if bot:
-            best_move, _ = self.minimax(board, self.player_id, 4, float("-inf"), float("+inf"))
+            best_move, _ = self.iterative_deepening_minimax(board, self.player_id, 10)
             assert(type(best_move) is int)
             return best_move
         else:
@@ -53,55 +54,69 @@ class MyPlayer:
         print("")
 
     
+    def iterative_deepening_minimax(self, board, player, max_depth):
+        best_move = None
+        best_value = -float('inf')
+
+        # Calculate the percentage of empty cells on the board
+        empty_cells = np.count_nonzero(board == 0)
+        total_cells = self.board_width * self.board_height
+        empty_percentage = empty_cells / total_cells
+
+        # Calculate the dynamic depth based on the inverse of the empty percentage
+        dynamic_depth = 10 - int(empty_percentage*10)
+
+        for depth in range(1, dynamic_depth + 1):
+            move, value = self.minimax(board, player, depth, -float('inf'), float('inf'))
+
+            if value > best_value:
+                best_move = move
+                best_value = value
+
+        return best_move, best_value
+
+    
     def minimax(self, board, player, depth, alpha, beta):
-        # Base case: If the game is over or max depth is reached, evaluate the position
         if depth == 0:
             return None, self.evaluate_position(board, self.player_id)
-
-        # Find all legal moves (non-full columns)
+    
         legal_moves = [col for col in range(self.board_width) if 0 in board[:, col]]
-
+    
         if player == self.player_id:
-            # Maximize the score
             best_column = None
             best_value = -float('inf')
             for move in legal_moves:
                 next_board = self.make_move(board, move, player)
-                assert len(next_board) == self.board_height
-                assert len(next_board[0]) == self.board_width
-
+    
                 _, value = self.minimax(next_board, self.opponent_id, depth - 1, alpha, beta)
-
+    
                 if value > best_value:
                     best_value = value
                     best_column = move
-
+    
                 alpha = max(alpha, best_value)
-
+    
                 if beta <= alpha:
                     break
-
+                
             return best_column, best_value
         else:
-            # Minimize the score
             best_column = None
             best_value = float('inf')
             for move in legal_moves:
                 next_board = self.make_move(board, move, player)
-                assert len(next_board) == self.board_height
-                assert len(next_board[0]) == self.board_width
-
+    
                 _, value = self.minimax(next_board, self.player_id, depth - 1, alpha, beta)
-
+    
                 if value < best_value:
                     best_value = value
                     best_column = move
-
+    
                 beta = min(beta, best_value)
-
+    
                 if beta <= alpha:
                     break
-
+                
             return best_column, best_value
 
         
@@ -133,30 +148,6 @@ class MyPlayer:
                 pass
 
 
-    # def evaluate_position(self, board: np.ndarray, player_moving_id: int) -> float:
-    #     """
-    #     Evaluate the position of the board. The result should be between -1 and 1.
-    #     Negative values mean the player 1 is winning, positive values mean player 2 is winning.
-    #     """
-    #     if player_moving_id == self.player_id:
-    #         opponent_id = self.opponent_id
-    #     else:
-    #         opponent_id = self.player_id
-
-    #     # Check if the player has won
-    #     if self.is_winner(board, player_moving_id):
-    #         return 1.0
-    #     # Check if the opponent has won
-    #     elif self.is_winner(board, opponent_id):
-    #         return -1.0
-    #     # If it's a draw, return 0
-    #     elif np.all(board != 0):
-    #         return 0.0
-    #     else:
-    #         # Calculate a simple heuristic based on the number of pieces in rows, columns, and diagonals
-    #         player_score = self.calculate_score(board, player_moving_id)
-    #         opponent_score = self.calculate_score(board, opponent_id)
-    #         return (player_score - opponent_score) / self.length_needed
     def calculate_connected(self, board: np.ndarray, player_id: int) -> int:
         connected_count = 0
 
