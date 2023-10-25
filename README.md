@@ -21,6 +21,10 @@ Możecie też pisać na **[facebook'u](https://www.facebook.com/kolonaukowedatas
    - `spaceship_titanic/rozwiazania/<imie>_<nazwisko>/`
 4. Stwórz nowego Pull Requesta z twojego forka do tego repozytorium
 
+## Prezentacja
+
+Widzimy się 30 października na wydziale MiNI w auli 105! Będziecie mieli 10 minut na zaprezentowanie swojej pracy i najciekawszych wniosków 🔍
+
  ---
 
 # Recruitment for the WUT Data Science Club in 2023 📈.
@@ -45,3 +49,6 @@ You can also write on **[facebook](https://www.facebook.com/kolonaukowedatascien
    - `spaceship_titanic/rozwiazania/<name>_<surname>/`
 4. Create a new Pull Request from your fork to this repository
 
+## Presentation
+
+We'll see each other on Oct 30 at the MiNI faculty in room 105! You'll have 10 min to present your solution and the most interesting conclusions 🔍
