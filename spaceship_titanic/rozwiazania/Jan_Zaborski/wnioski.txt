@@ -1,0 +1,83 @@
+Najwięcej pasażerów wylatywało z Ziemii, najczęstszą destynacją był TRAPPIST-1e (udało się tam trochę ponad 68% pasażerów).
+
+Pasażerowie lecący na PSOJ318.5-22 to w znacznej większości pasażerowie z Ziemii (90%), była to najmniej licznie odwiedzana destynacja.
+
+42% ludzi wylatujących z Europy udało się na 55 Cancri e, stanowią oni prawie połowę ludzi podróżujacych do tej destynacji.
+
+Jedynie 2,29% podróżujących zapłaciło za usługę VIP
+
+
+
+
+
+Blisko 35% wszystkich pasażerów skorzystało z CryoSleep
+
+Najczęściej na CryoSleep decydowali się pasażerowie z Europy(42,75%), a najżadziej z Ziemii (30,03%)
+
+Pasażerowie najczciej korzystali z CryoSleep podczas podróży do PSO J318.5-22 (48,12%), a najrzadziej podczas podróży do TRAPPIST-1e(31,56%)
+
+Najczęściej hibernowali się pasażerowie z  podróżujący z Ziemii do PSO J318.5-22 (49,86%) a najrzadziej z Marsa na PSO J318.5-22 (22,45%)
+
+
+
+
+
+
+
+Średnia wieku podróżujących wynosiła 28,8 lat.
+
+Dorośli (20-64 lat) stanowili 74,92% wszystkich pasażerów, najmniej liczną grupą były osoby starsze (65+ lat)
+
+Osoby w wieku od 20 do 29 lat stanowili 31,77% wszystkich podróżujących, była to najliczniejsza grupa po podziale pasażerów na dziesięciolecia
+
+Home Planet z najwyższą średnią wieku była Europa, a najniższą Ziemia.
+
+
+
+
+
+Pasażerowie VIP stanowili 2,29% podróżujących.
+
+Średnia ich wieku była wyższa od średniej wieku wszystkich pasażerów i wynosiła ponad 37 lat
+
+Pasażerwie ze statusem VIP rzadziej decydowali się na CryoSleep (jedynie 10,55%)
+
+Wśród VIPów nie było żadnych dzieci, prawie 96% VIPów to dorośli, drugą co do wielkości grupą były osoby starsze stanowiące lekko ponad 3% VIPów
+
+Najczęściej byli oni w 3 lub 4 dekadzie swojego życia, czyli 20-39 lat
+
+Prawie 86% VIPów wykupiło co najmniej jedną dodatkową usługę, najczęściej był to FoodCourt (63,32%), na który średnio wydawali najwięcej
+
+VIPowie znacznie częściej wykupywali usługi niż zwykli pasażerowie
+
+Najwięcej VIPów podróżowało z Europy, z Ziemii żaden
+
+Najwięcej VIPów podróżowało do TRAPPIST-1e, ale to w grupie podróżujących na 55 Cancri e było procentowo najwięcej VIPów
+
+Najmniej chętnie latali na PSO J318.5-22
+
+
+
+
+Pasażerowie na usługi wydali łącznie 12,525,451 
+
+Największą kwotę wydali na FoodCourt, najmniejszą na ShoppingMall
+
+Prawie 58% pasażerów wykupiło co najmniej jedną usługę
+
+Spa było wykupywane najczęściej, a najrzadziej ShoppingMall
+
+Średnio najwięcej wydawano na FoodCourt, a najmniej na ShoppingMall
+
+Najczęściej wykupywaną usługą dla konkretnej dekady było Spa dla 20-29 latków
+
+Wszystkie usługi były do siebie bardzo podobne pod względem liczby ich zakupień przez ludzi w danych dekadach
+
+Pasażerowie z Marsa częściej wykupywali RoomService i ShoppingMall, ale żadziej VRDeck i FoodCourt
+
+Pasażerowie z Europy częściej wykupywali VRDeck i FoodCourt, a żadziej RoomService i ShoppingMall
+
+Pasażerowie z Ziemii wykupywali wszystko na podobnym poziomie
+
+
+
