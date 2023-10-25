@@ -41,7 +41,7 @@ class MyPlayer:
             assert(type(best_move) is int)
             return best_move
         else:
-            column = int(input(f"Choose a column (0-6): "))
+            column = int(input(f"Choose a column (0-{self.board_width}): "))
             assert(type(column) is int)
             return column
 
