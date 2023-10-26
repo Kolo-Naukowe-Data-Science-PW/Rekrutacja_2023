@@ -92,14 +92,14 @@ class AI(Player):
         return False
     
     # Get the row where a token will be placed
-    def get_drop_row(self, board: np.ndarray, col: int) -> int:
+    def position_of_token(self, board: np.ndarray, col: int) -> int:
         for i in range(self.board_height-1, -1, -1):
             if board[i , col] == 0:
                 return i; 
         raise ValueError("Incorrect move - board unchanged")
 
     # Drop a token in the specified position on the board
-    def drop_token(self, board: np.ndarray, pos: Tuple[int, int], player_id: int) -> None:
+    def place_token(self, board: np.ndarray, pos: Tuple[int, int], player_id: int) -> None:
         board[pos] = player_id
 
     # Evaluates a window
@@ -133,7 +133,7 @@ class AI(Player):
     def evaluate_board(self, board: np.ndarray) -> int:
         score = 0
 
-        # Proritize centre of board
+        # Prioritize centre of the board
         centre_column = [int(i) for i in list(board[:, self.board_width // 2])]
         score = centre_column.count(self.player_id) * 3
 
@@ -241,7 +241,7 @@ class AI(Player):
         if token_counter >= self.lenght_needed:
             return player_id
 
-        # Not possible moves:
+        
         if self.possible_move(board) == False:
             return 0
         
@@ -259,11 +259,11 @@ class AI(Player):
             
             column = random.choice(valid_columns)
             for col in valid_columns:
-                row = self.get_drop_row(board, col)
+                row = self.position_of_token(board, col)
                 b_copy = board.copy()
-                self.drop_token(b_copy, (row, col), self.player_id)
+                self.place_token(b_copy, (row, col), self.player_id)
                 
-                # evaluated for copy_board
+                
                 game_status = self.winning_move(b_copy, (row, col))
                 if game_status == -1: 
                     new_score = self.minimax(b_copy, depth-1, alpha, beta, False)[1]
@@ -285,9 +285,9 @@ class AI(Player):
 
             column = random.choice(valid_columns)
             for col in valid_columns:
-                row = self.get_drop_row(board, col)
+                row = self.position_of_token(board, col)
                 b_copy = board.copy()
-                self.drop_token(b_copy, (row, col), self.opponent_id)
+                self.place_token(b_copy, (row, col), self.opponent_id)
                 
                 game_status = self.winning_move(b_copy, (row, col))
                 if game_status == -1: 
@@ -348,7 +348,6 @@ class Game:
     def print_board(self) -> None:
             for i in range(0, self.board_width):
                 print(f"  {i}", end="")
-
             print()
             print(self.board)
 
