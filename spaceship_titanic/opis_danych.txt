@@ -2,7 +2,7 @@
 
 HomePlanet - planeta, z której pasażer odleciał, zazwyczaj planeta stałego zamieszkania.
 
- CryoSleep - wskazuje, czy pasażer zdecydował się zostać wprowadzony w stan hibernacji na czas podróży. Pasażerowie w stanie “kriosnu” są zamknięci w swoich kabinach.
+CryoSleep - wskazuje, czy pasażer zdecydował się zostać wprowadzony w stan hibernacji na czas podróży. Pasażerowie w stanie “kriosnu” są zamknięci w swoich kabinach.
 
 Cabin - numer kabiny, w której przebywa pasażer. Przyjmuje postać deck/num/side, gdzie side może oznaczać P (lewą burtę) lub S (prawą burtę).
 
