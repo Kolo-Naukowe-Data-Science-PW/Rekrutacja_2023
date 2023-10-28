@@ -9,9 +9,9 @@ Original file is located at
 # Getting the data
 """
 
-!git clone https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023.git
+# !git clone https://github.com/Kolo-Naukowe-Data-Science-PW/Rekrutacja_2023.git
 
-!cd Rekrutacja_2023/spaceship_titanic/
+# !cd Rekrutacja_2023/spaceship_titanic/
 
 """# Exploratory analysis"""
 
