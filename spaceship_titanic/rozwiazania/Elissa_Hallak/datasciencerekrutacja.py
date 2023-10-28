@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-with open("dane.txt", "r+") as czytany_plik:
+with open("dane.csv", "r+") as czytany_plik:
     czytany_plik.readline()
     mars = 0
     europa = 0
@@ -77,7 +77,7 @@ with open("dane.txt", "r+") as czytany_plik:
 
 
 print(f"Liczba osob ktore skorzystaly z Room Serivce wynosi {liczba_RoomService}")
-print(f"W sumie te osob wydały {pieniadze_RoomService}")
+print(f"W sumie te osoby wydały {pieniadze_RoomService}")
 print(f"Kazda osoba wydała średnio : {pieniadze_RoomService/liczba_RoomService}")
 print (f"Sredni wiek wynosil: {wiek/liczba_wiek}")
     #print(cryo_ogolnie)

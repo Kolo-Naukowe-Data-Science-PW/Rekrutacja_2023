@@ -2,7 +2,7 @@ library("readr")
 library("dplyr")
 library("plotrix")
 library("ggplot2")
-ramka <- read.csv("C:/Users/PC/Downloads/dane.csv")
+ramka <- read.csv("../../dane.csv")
 
 unique(ramka$HomePlanet)
 unique(ramka$Cabin)

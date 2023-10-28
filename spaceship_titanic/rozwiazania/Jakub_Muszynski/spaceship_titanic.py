@@ -21,7 +21,7 @@ import numpy as np
 import sklearn as sk
 import seaborn as sns
 
-df = pd.read_csv("/content/Rekrutacja_2023/spaceship_titanic/dane.csv")
+df = pd.read_csv("dane.csv")
 df.head(5)
 
 """Some basics about the data to get us started."""
