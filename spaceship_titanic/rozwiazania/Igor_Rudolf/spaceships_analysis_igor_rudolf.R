@@ -1,4 +1,4 @@
-data<- read.csv("C:\\Users\\igorr\\Documents\\dane.csv")
+data<- read.csv("../../dane.csv")
 
 library(dplyr)
 library(tidyr)

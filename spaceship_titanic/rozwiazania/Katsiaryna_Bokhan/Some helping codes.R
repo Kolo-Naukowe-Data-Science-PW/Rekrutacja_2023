@@ -1,6 +1,6 @@
 library(dplyr)
 
-df <- read.csv("dane.csv")
+df <- read.csv("../../dane.csv")
 df_separated<- read.csv("data_separated.csv")
 
 df <- df %>% 

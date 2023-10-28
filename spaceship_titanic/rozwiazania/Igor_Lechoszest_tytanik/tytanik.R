@@ -1,4 +1,4 @@
-dane <- read.csv("C:/Users/Nitro/Desktop/tytanik/dane.csv")
+dane <- read.csv("../../dane.csv")
 
 library('data.table')
 library('sqldf')

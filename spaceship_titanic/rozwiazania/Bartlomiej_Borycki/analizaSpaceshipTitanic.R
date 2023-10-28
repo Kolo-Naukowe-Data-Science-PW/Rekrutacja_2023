@@ -6,7 +6,7 @@ library(gridExtra)
 
 library(randomForest)
 
-data <- read.csv("dane.csv")
+data <- read.csv("../../dane.csv")
 
 View(data)
 

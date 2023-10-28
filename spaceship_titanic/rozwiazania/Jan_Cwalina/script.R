@@ -5,7 +5,7 @@ library(ggplot2)
 library(stringr)
 library(forcats)
 
-dane <- read.csv('./TWD/dane.csv')
+dane <- read.csv('../../dane.csv')
 
 ########################################### WYKRES 1 ####################################
 dane1 <- dane %>% group_by(HomePlanet) %>% summarise(n = n())

@@ -2,7 +2,7 @@ library(dplyr)
 library(ggplot2)
 library(hrbrthemes)
 library(ggthemes)
-dane <- read.csv("./dane/dane.csv")
+dane <- read.csv("../../dane.csv")
 
 unique(dane$HomePlanet)
 unique(dane$Destination)

@@ -11,3 +11,5 @@ seaborn
 tensorflow==2.14.0
 xgboost==2.0.1
 ydata_profiling==4.6.1
+ipykernel
+nbformat>=4.2.0
